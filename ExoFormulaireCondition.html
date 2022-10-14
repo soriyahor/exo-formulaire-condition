@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condition</title>
+    <style>
+        input:invalid {
+            border: red solid 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulaire</h1>
+    
+    <h2>Contactez nous</h2>
+    <form action="">
+    <label for="sexe">Sexe</label>
+    <input type="radio" name="sexe" value="Féminin">
+        <label for="féminin">Féminin</label>
+        
+        <input type="radio" name="sexe" value="Masculin"/>
+        <label for="masculin">Masculin</label>
+        <br><br>
+    <label for="name">Nom</label>
+    <input type="text" name="nom"minlength="2" maxlength="25">
+    <label for="prenom">Prénom</label>
+    <input type="text" name="Prénom"minlength="2" maxlength="25">
+    <br><br>
+    <label for="pseudo">Pseudo
+    <input type="text" name="Pseudo"minlength="4" maxlength="15">
+    <br><br>
+    <label for="age">Age</label>
+    <input type="number"min="18"max="120">
+
+        <br><br>
+     <label for="password">Mot de passe</label>   
+    <input type="password">
+    <br><br>
+    <label for="commentaires">Commentaire</label><br>
+    <textarea name="comments" id="comments" cols="525" rows="6"></textarea>
+        <br><br>
+        <label for="pays">Pays</label>
+        <select name="pays" id="tpays" size="2" multiple>
+            <option value="france">France</option>
+            <option value="espagne">Espagne</option>
+            <option value="italie">Italie</option>
+            <option value="suisse">Suisse</option>
+            <option value="angleterre">Angleterre</option>
+
+        </select>
+    <br><br>
+
+
+    <label for="temail">Souhaitez vous être contacté par email :</label>
+    <input type="radio"name="temail"value="toui">
+    <label for="toui">Oui</label>
+    <input type="radio" name="temail" value="tnon">
+    <label for="tnon">Non</label>
+            <br><br>
+
+
+
+    <label for="smail">Si oui, Email:</label>
+    <input type="email">
+    <br><br>
+    <input type="submit" value="Validez"/>
+    </form>
+</body>
+</html>
